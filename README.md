@@ -27,8 +27,10 @@
 ## 文件导航
 
 - `novel/series-bible.md`：小说母本设定总纲
+- `novel/family-dossier.md`：家庭背景硬设定
 - `novel/chapter-template.md`：每章开写前必须填写的写作卡
 - `novel/chapter-cards/01-glass-crack.md`：第一章写作卡
+- `novel/chapter-cards/02-first-lie.md` 到 `09-ninth-road.md`：后续章节最小写作卡
 - `workflow/todo.md`：项目待办
 - `workflow/production-pipeline.md`：从小说到短剧/视频的流程
 - `research/market-and-title-notes.md`：赛道和片名研究记录
