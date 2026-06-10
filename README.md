@@ -31,6 +31,11 @@
 - `novel/chapter-template.md`：每章开写前必须填写的写作卡
 - `novel/chapter-cards/01-glass-crack.md`：第一章写作卡
 - `novel/chapter-cards/02-first-lie.md` 到 `09-ninth-road.md`：后续章节最小写作卡
+- `novel/character-continuity.md`：人物连续性账本
+- `novel/chapter-ledger.md`：章节账本，标记正典版本和下一章债务
+- `novel/foreshadowing-ledger.md`：伏笔账本
+- `novel/story-control-checklist.md`：写作自动推荐和故事控制清单
+- `novel/chapter-navigators/`：每章开写前的章节导航图
 - `workflow/todo.md`：项目待办
 - `workflow/production-pipeline.md`：从小说到短剧/视频的流程
 - `research/market-and-title-notes.md`：赛道和片名研究记录
