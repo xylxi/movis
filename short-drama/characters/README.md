@@ -1,6 +1,6 @@
 # 角色资产导航
 
-本目录管理《第九条路》短剧阶段的角色视觉规格。后续生成人物设定图、角色照、场景图、关键帧、分镜和视频提示词时，必须先读取 `short-drama/AGENTS.md`。
+本目录管理《第九条路》短剧阶段的角色视觉规格。后续生成人物设定图、角色照、场景设定图、场景图、关键帧、分镜和视频提示词时，必须先读取 `short-drama/AGENTS.md` 和 `short-drama/visual-asset-workflow.md`。
 
 ## 文件说明
 
@@ -13,6 +13,7 @@
 
 ```text
 读 short-drama/AGENTS.md
+-> 读 short-drama/visual-asset-workflow.md
 -> 读 character-bible.md
 -> 读具体角色规格
 -> 读对应集数出场表

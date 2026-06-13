@@ -9,13 +9,14 @@
 生图前必须再次读取：
 
 1. `short-drama/AGENTS.md`
-2. `short-drama/adaptation-control.md`
-3. `short-drama/characters/character-bible.md`
-4. `short-drama/characters/xu-xing.md`
-5. `short-drama/characters/episode-rosters/01-glass-crack.md`
-6. `short-drama/assets/characters/_asset-index.md`
-7. `short-drama/scripts/01-glass-crack-script.md`
-8. `short-drama/visual-handoff/01-glass-crack-entry-list.md`
+2. `short-drama/visual-asset-workflow.md`
+3. `short-drama/adaptation-control.md`
+4. `short-drama/characters/character-bible.md`
+5. `short-drama/characters/xu-xing.md`
+6. `short-drama/characters/episode-rosters/01-glass-crack.md`
+7. `short-drama/assets/characters/_asset-index.md`
+8. `short-drama/scripts/01-glass-crack-script.md`
+9. `short-drama/visual-handoff/01-glass-crack-entry-list.md`
 
 ## 统一设定图版式
 
@@ -44,12 +45,12 @@
 
 ## 生成批次
 
-| asset_id | character_id | 角色 | asset_type | 资产路径 | 状态 |
+| asset_id | character_id | 角色 | asset_type | 资产路径 | 当前状态 |
 | --- | --- | --- | --- | --- | --- |
-| `xu-xing-child-sheet-v01` | `xu-xing-child` | 许行 | `character_sheet` | `short-drama/assets/characters/xu-xing/child/xu-xing-child-sheet-v01.png` | `planned` |
-| `xu-mingyuan-ep01-sheet-v01` | `xu-mingyuan-ep01` | 许明远 | `character_sheet` | `short-drama/assets/characters/ep01-glass-crack/xu-mingyuan/xu-mingyuan-ep01-sheet-v01.png` | `planned` |
-| `lin-an-ep01-sheet-v01` | `lin-an-ep01` | 林安 | `character_sheet` | `short-drama/assets/characters/ep01-glass-crack/lin-an/lin-an-ep01-sheet-v01.png` | `planned` |
-| `teaching-director-ep01-sheet-v01` | `teaching-director-ep01` | 教导主任 | `character_sheet` | `short-drama/assets/characters/ep01-glass-crack/teaching-director/teaching-director-ep01-sheet-v01.png` | `planned` |
+| `xu-xing-child-sheet-v01` | `xu-xing-child` | 许行 | `character_sheet` | `short-drama/assets/characters/xu-xing/child/xu-xing-child-sheet-v01.png` | 以索引为准 |
+| `xu-mingyuan-ep01-sheet-v01` | `xu-mingyuan-ep01` | 许明远 | `character_sheet` | `short-drama/assets/characters/ep01-glass-crack/xu-mingyuan/xu-mingyuan-ep01-sheet-v01.png` | 以索引为准 |
+| `lin-an-ep01-sheet-v01` | `lin-an-ep01` | 林安 | `character_sheet` | `short-drama/assets/characters/ep01-glass-crack/lin-an/lin-an-ep01-sheet-v01.png` | 以索引为准 |
+| `teaching-director-ep01-sheet-v01` | `teaching-director-ep01` | 教导主任 | `character_sheet` | `short-drama/assets/characters/ep01-glass-crack/teaching-director/teaching-director-ep01-sheet-v01.png` | 以索引为准 |
 
 ## 角色设定图规格
 
