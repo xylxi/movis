@@ -21,8 +21,8 @@
 | `lin-an-ep01-sheet-v01` | `lin-an-ep01` | `character_sheet` | `ep01` | `adult` | `short-drama/assets/characters/ep01-glass-crack/lin-an/lin-an-ep01-sheet-v01.png` | `rejected` | 用户反馈显老、疲惫，且图中英文标签过多，不符合阳光普通家庭调性 |
 | `xu-mingyuan-ep01-sheet-v02` | `xu-mingyuan-ep01` | `character_sheet` | `ep01` | `adult` | `short-drama/assets/characters/ep01-glass-crack/xu-mingyuan/xu-mingyuan-ep01-sheet-v02.png` | `superseded` | 用户反馈服装材质暗淡、整体偏保守，由 v03 迭代替代 |
 | `lin-an-ep01-sheet-v02` | `lin-an-ep01` | `character_sheet` | `ep01` | `adult` | `short-drama/assets/characters/ep01-glass-crack/lin-an/lin-an-ep01-sheet-v02.png` | `superseded` | 用户反馈服装材质暗淡、整体偏保守，由 v03 迭代替代 |
-| `xu-mingyuan-ep01-sheet-v03` | `xu-mingyuan-ep01` | `character_sheet` | `ep01` | `adult` | `short-drama/assets/characters/ep01-glass-crack/xu-mingyuan/xu-mingyuan-ep01-sheet-v03.png` | `generated` | 父亲人物设定图 v03，按 2020s 明亮日常服饰和清爽材质重生，待人工确认 |
-| `lin-an-ep01-sheet-v03` | `lin-an-ep01` | `character_sheet` | `ep01` | `adult` | `short-drama/assets/characters/ep01-glass-crack/lin-an/lin-an-ep01-sheet-v03.png` | `generated` | 母亲人物设定图 v03，按 2020s 明亮日常服饰和清爽材质重生，待人工确认 |
+| `xu-mingyuan-ep01-sheet-v03` | `xu-mingyuan-ep01` | `character_sheet` | `ep01` | `adult` | `short-drama/assets/characters/ep01-glass-crack/xu-mingyuan/xu-mingyuan-ep01-sheet-v03.png` | `approved` | 用户确认采用；父亲人物设定图 v03，可作为后续一致性参考 |
+| `lin-an-ep01-sheet-v03` | `lin-an-ep01` | `character_sheet` | `ep01` | `adult` | `short-drama/assets/characters/ep01-glass-crack/lin-an/lin-an-ep01-sheet-v03.png` | `approved` | 用户确认采用；母亲人物设定图 v03，可作为后续一致性参考 |
 | `teaching-director-ep01-sheet-v01` | `teaching-director-ep01` | `character_sheet` | `ep01` | `adult` | `short-drama/assets/characters/ep01-glass-crack/teaching-director/teaching-director-ep01-sheet-v01.png` | `generated` | 第一章教导主任人物设定图 |
 
 ## 更新规则
