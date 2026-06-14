@@ -129,10 +129,10 @@ Seedance 提示词：
 - 导出文件名：`ep01_A01_danger_setup_15s.mp4`
 - 覆盖分镜：`ep01-s001`、`ep01-s002`
 - 图片材料：
-  - `{{img.xu_xing_child}}`，role: `reference_image`，用途：锁定许行 8 岁外观、校服、脚尖停住和紧张表情。
-  - `{{img.teaching_director_ep01}}`，role: `reference_image`，用途：锁定教导主任外观、作业本和普通教师气质。
-  - `{{img.scene_playground}}`，role: `reference_image`，用途：锁定操场、教学楼、公告栏和学生距离。
-  - `{{img.scene_broken_window}}`，role: `reference_image`，用途：锁定三楼破窗、窗下路线和危险落点。
+  - `{{img.xu_xing_child}}`，path: `short-drama/assets/characters/xu-xing/child/xu-xing-child-sheet-v01.png`，role: `reference_image`，用途：锁定许行 8 岁外观、校服、脚尖停住和紧张表情。
+  - `{{img.teaching_director_ep01}}`，path: `short-drama/assets/characters/ep01-glass-crack/teaching-director/teaching-director-ep01-sheet-v01.png`，role: `reference_image`，用途：锁定教导主任外观、作业本和普通教师气质。
+  - `{{img.scene_playground}}`，path: `short-drama/assets/scenes/ep01-glass-crack/ep01-school-playground-building-sheet-v01.png`，role: `reference_image`，用途：锁定操场、教学楼、公告栏和学生距离。
+  - `{{img.scene_broken_window}}`，path: `short-drama/assets/scenes/ep01-glass-crack/ep01-broken-window-risk-sheet-v01.png`，role: `reference_image`，用途：锁定三楼破窗、窗下路线和危险落点。
 - 段落目的：建立“许行停住”和“主任经过窗下”的危险关系。
 - 镜头结构：低机位脚尖近景 -> 上摇到三楼破窗 -> 中远景带出主任经过窗下。
 - 动作节拍：前 3s 许行脚尖停住、膝盖微软；3-5s 镜头上摇看到三楼破窗；5-9s 主任抱作业本经过窗下路线。
@@ -148,9 +148,9 @@ Seedance 提示词：
 - 导出文件名：`ep01_A02_choice_pressure_15s.mp4`
 - 覆盖分镜：`ep01-s003`、`ep01-s004`
 - 图片材料：
-  - `{{img.xu_xing_child}}`，role: `reference_image`，用途：锁定许行外观、校服和紧张表情。
-  - `{{img.scene_playground}}`，role: `reference_image`，用途：锁定公告栏、操场和同学站位距离。
-  - `{{img.scene_broken_window}}`，role: `reference_image`，用途：锁定楼下主任路线和远处三楼破窗方向。
+  - `{{img.xu_xing_child}}`，path: `short-drama/assets/characters/xu-xing/child/xu-xing-child-sheet-v01.png`，role: `reference_image`，用途：锁定许行外观、校服和紧张表情。
+  - `{{img.scene_playground}}`，path: `short-drama/assets/scenes/ep01-glass-crack/ep01-school-playground-building-sheet-v01.png`，role: `reference_image`，用途：锁定公告栏、操场和同学站位距离。
+  - `{{img.scene_broken_window}}`，path: `short-drama/assets/scenes/ep01-glass-crack/ep01-broken-window-risk-sheet-v01.png`，role: `reference_image`，用途：锁定楼下主任路线和远处三楼破窗方向。
 - 段落目的：让观众看懂许行为什么犹豫：维修代价、同学催跑、主任仍在危险区。
 - 镜头结构：公告栏纸张边缘 -> 许行侧脸 -> 同学催跑 -> 许行回头。
 - 动作节拍：0-3s 公告栏模糊维修纸张和许行侧脸；3-6s 许行看向楼下路线，嘴微张；6-10s 同学在远处招手催他离开，许行仍停住。
@@ -166,9 +166,9 @@ Seedance 提示词：
 - 导出文件名：`ep01_A03_future_branches_15s.mp4`
 - 覆盖分镜：`ep01-s005`、`ep01-s006`、`ep01-s007`
 - 图片材料：
-  - `{{img.xu_xing_child}}`，role: `reference_image`，用途：锁定许行外观、校服、手背轻红痕尺度。
-  - `{{img.teaching_director_ep01}}`，role: `reference_image`，用途：锁定主任和作业本。
-  - `{{img.scene_broken_window}}`，role: `reference_image`，用途：锁定碎片落点和学校楼下空间。
+  - `{{img.xu_xing_child}}`，path: `short-drama/assets/characters/xu-xing/child/xu-xing-child-sheet-v01.png`，role: `reference_image`，用途：锁定许行外观、校服、手背轻红痕尺度。
+  - `{{img.teaching_director_ep01}}`，path: `short-drama/assets/characters/ep01-glass-crack/teaching-director/teaching-director-ep01-sheet-v01.png`，role: `reference_image`，用途：锁定主任和作业本。
+  - `{{img.scene_broken_window}}`，path: `short-drama/assets/scenes/ep01-glass-crack/ep01-broken-window-risk-sheet-v01.png`，role: `reference_image`，用途：锁定碎片落点和学校楼下空间。
 - 段落目的：用三段短预感呈现逃走、沉默、喊人的不同代价，不解释能力规则。
 - 镜头结构：冷色水管旁 -> 作业本散落无声 -> 手背红痕和破音喊出。
 - 动作节拍：0-3.5s 水管滴水、许行蹲在角落；3.5-7s 作业本散落，许行远处张嘴无声；7-11s 手背轻红痕，许行破音张口，画面偏暖后断回现实。
@@ -184,10 +184,10 @@ Seedance 提示词：
 - 导出文件名：`ep01_A04_reality_choice_15s.mp4`
 - 覆盖分镜：`ep01-s008`、`ep01-s009`、`ep01-s010`、`ep01-s011`
 - 图片材料：
-  - `{{img.xu_xing_child}}`，role: `reference_image`，用途：锁定许行外观、校服、喊老师和承认时的动作。
-  - `{{img.teaching_director_ep01}}`，role: `reference_image`，用途：锁定主任外观、作业本、后退动作和非反派气质。
-  - `{{img.scene_playground}}`，role: `reference_image`，用途：锁定操场、公告栏和同学距离。
-  - `{{img.scene_broken_window}}`，role: `reference_image`，用途：锁定碎片落点、主任路线和安全距离。
+  - `{{img.xu_xing_child}}`，path: `short-drama/assets/characters/xu-xing/child/xu-xing-child-sheet-v01.png`，role: `reference_image`，用途：锁定许行外观、校服、喊老师和承认时的动作。
+  - `{{img.teaching_director_ep01}}`，path: `short-drama/assets/characters/ep01-glass-crack/teaching-director/teaching-director-ep01-sheet-v01.png`，role: `reference_image`，用途：锁定主任外观、作业本、后退动作和非反派气质。
+  - `{{img.scene_playground}}`，path: `short-drama/assets/scenes/ep01-glass-crack/ep01-school-playground-building-sheet-v01.png`，role: `reference_image`，用途：锁定操场、公告栏和同学距离。
+  - `{{img.scene_broken_window}}`，path: `short-drama/assets/scenes/ep01-glass-crack/ep01-broken-window-risk-sheet-v01.png`，role: `reference_image`，用途：锁定碎片落点、主任路线和安全距离。
 - 段落目的：完成“回到现实、喊老师、主任避险、许行承认”的主选择闭环。
 - 镜头结构：许行回神 -> 许行喊老师 -> 主任后退碎片落地 -> 许行承认。
 - 动作节拍：0-3s 操场声音回来，许行吸气站稳；3-6s 许行抬头喊老师；6-11s 主任后退，碎片落在鞋尖前；11-15s 主任问话，许行低头承认。
@@ -203,11 +203,11 @@ Seedance 提示词：
 - 导出文件名：`ep01_A05_school_handling_15s.mp4`
 - 覆盖分镜：`ep01-s012`、`ep01-s013`、`ep01-s014`、`ep01-s015`
 - 图片材料：
-  - `{{img.xu_xing_child}}`，role: `reference_image`，用途：锁定许行坐在门边时的外观和校服。
-  - `{{img.xu_mingyuan_ep01}}`，role: `reference_image`，用途：锁定许明远年轻父亲外观、黑手机和克制状态。
-  - `{{img.lin_an_ep01}}`，role: `reference_image`，用途：锁定电话里母亲年轻、清楚、先确认伤害的状态。
-  - `{{img.teaching_director_ep01}}`，role: `reference_image`，用途：锁定主任手背轻微处理和作业本。
-  - `{{img.scene_office}}`，role: `reference_image`，用途：锁定办公室门边座位、桌面、医务处理和入口关系。
+  - `{{img.xu_xing_child}}`，path: `short-drama/assets/characters/xu-xing/child/xu-xing-child-sheet-v01.png`，role: `reference_image`，用途：锁定许行坐在门边时的外观和校服。
+  - `{{img.xu_mingyuan_ep01}}`，path: `short-drama/assets/characters/ep01-glass-crack/xu-mingyuan/xu-mingyuan-ep01-sheet-v03.png`，role: `reference_image`，用途：锁定许明远年轻父亲外观、黑手机和克制状态。
+  - `{{img.lin_an_ep01}}`，path: `short-drama/assets/characters/ep01-glass-crack/lin-an/lin-an-ep01-sheet-v03.png`，role: `reference_image`，用途：锁定电话里母亲年轻、清楚、先确认伤害的状态。
+  - `{{img.teaching_director_ep01}}`，path: `short-drama/assets/characters/ep01-glass-crack/teaching-director/teaching-director-ep01-sheet-v01.png`，role: `reference_image`，用途：锁定主任手背轻微处理和作业本。
+  - `{{img.scene_office}}`，path: `short-drama/assets/scenes/ep01-glass-crack/ep01-school-office-clinic-sheet-v01.png`，role: `reference_image`，用途：锁定办公室门边座位、桌面、医务处理和入口关系。
 - 段落目的：表现事故后的处理顺序：先处理伤害，再联系家长，再确认事实。
 - 镜头结构：许行坐门边 -> 创可贴和作业本 -> 手机电话 -> 父亲看窗户照片。
 - 动作节拍：0-4s 许行坐在办公室门边；4-7s 桌面创可贴、作业本和处理痕迹；7-10s 手机通话，许行虚焦；10-15s 许明远看手机里的模糊窗户照片，再看主任和许行。
@@ -223,11 +223,11 @@ Seedance 提示词：
 - 导出文件名：`ep01_A06_cost_apology_15s.mp4`
 - 覆盖分镜：`ep01-s016`、`ep01-s017`、`ep01-s018`
 - 图片材料：
-  - `{{img.xu_xing_child}}`，role: `reference_image`，用途：锁定许行道歉时的校服和低头动作。
-  - `{{img.xu_mingyuan_ep01}}`，role: `reference_image`，用途：锁定父亲站在孩子身后半步、不替他说的姿态。
-  - `{{img.lin_an_ep01}}`，role: `reference_image`，用途：锁定林安手部、帆布包和年轻母亲状态。
-  - `{{img.teaching_director_ep01}}`，role: `reference_image`，用途：锁定主任不反派、接受道歉的气质。
-  - `{{img.scene_office}}`，role: `reference_image`，用途：锁定办公室/走廊空间和桌边处理环境。
+  - `{{img.xu_xing_child}}`，path: `short-drama/assets/characters/xu-xing/child/xu-xing-child-sheet-v01.png`，role: `reference_image`，用途：锁定许行道歉时的校服和低头动作。
+  - `{{img.xu_mingyuan_ep01}}`，path: `short-drama/assets/characters/ep01-glass-crack/xu-mingyuan/xu-mingyuan-ep01-sheet-v03.png`，role: `reference_image`，用途：锁定父亲站在孩子身后半步、不替他说的姿态。
+  - `{{img.lin_an_ep01}}`，path: `short-drama/assets/characters/ep01-glass-crack/lin-an/lin-an-ep01-sheet-v03.png`，role: `reference_image`，用途：锁定林安手部、帆布包和年轻母亲状态。
+  - `{{img.teaching_director_ep01}}`，path: `short-drama/assets/characters/ep01-glass-crack/teaching-director/teaching-director-ep01-sheet-v01.png`，role: `reference_image`，用途：锁定主任不反派、接受道歉的气质。
+  - `{{img.scene_office}}`，path: `short-drama/assets/scenes/ep01-glass-crack/ep01-school-office-clinic-sheet-v01.png`，role: `reference_image`，用途：锁定办公室/走廊空间和桌边处理环境。
 - 段落目的：让 280 元赔偿、母亲承担压力、孩子自己道歉形成连续因果。
 - 镜头结构：估价单 280 -> 林安折单进包 -> 许行道歉，父亲站后面。
 - 动作节拍：0-3s 估价单被递到桌面，数字 280 停住；3-6s 林安把单子对折放进帆布包；6-11s 许行面对主任说对不起，父亲站后半步不替他说。
@@ -243,10 +243,10 @@ Seedance 提示词：
 - 导出文件名：`ep01_A07_evening_review_15s.mp4`
 - 覆盖分镜：`ep01-s019`、`ep01-s020`、`ep01-s021`、`ep01-s022`
 - 图片材料：
-  - `{{img.xu_xing_child}}`，role: `reference_image`，用途：锁定许行写复盘时的校服和手部紧张状态。
-  - `{{img.xu_mingyuan_ep01}}`，role: `reference_image`，用途：锁定许明远年轻父亲、蓝色记录本和不说教姿态。
-  - `{{img.lin_an_ep01}}`，role: `reference_image`，用途：锁定林安年轻母亲和饭桌边安静陪伴状态。
-  - `{{img.scene_dining}}`，role: `reference_image`，用途：锁定饭桌、手机、维修单、作业本、蓝色记录本和家庭光线。
+  - `{{img.xu_xing_child}}`，path: `short-drama/assets/characters/xu-xing/child/xu-xing-child-sheet-v01.png`，role: `reference_image`，用途：锁定许行写复盘时的校服和手部紧张状态。
+  - `{{img.xu_mingyuan_ep01}}`，path: `short-drama/assets/characters/ep01-glass-crack/xu-mingyuan/xu-mingyuan-ep01-sheet-v03.png`，role: `reference_image`，用途：锁定许明远年轻父亲、蓝色记录本和不说教姿态。
+  - `{{img.lin_an_ep01}}`，path: `short-drama/assets/characters/ep01-glass-crack/lin-an/lin-an-ep01-sheet-v03.png`，role: `reference_image`，用途：锁定林安年轻母亲和饭桌边安静陪伴状态。
+  - `{{img.scene_dining}}`，path: `short-drama/assets/scenes/ep01-glass-crack/ep01-family-dining-review-sheet-v01.png`，role: `reference_image`，用途：锁定饭桌、手机、维修单、作业本、蓝色记录本和家庭光线。
 - 段落目的：用饭桌、手机、蓝色记录本和写字动作完成家庭复盘，不让父母讲大道理。
 - 镜头结构：饭桌建立 -> 手机震动未接 -> 父亲推蓝色记录本 -> 许行写复盘。
 - 动作节拍：0-4s 饭桌道具和一家三人手部坐姿；4-7s 黑色手机震动但没人接；7-11s 父亲把蓝色记录本推给许行；11-15s 许行停顿后落笔写字。
@@ -262,10 +262,10 @@ Seedance 提示词：
 - 导出文件名：`ep01_A08_morning_bill_15s.mp4`
 - 覆盖分镜：`ep01-s023`、`ep01-s024`
 - 图片材料：
-  - `{{img.xu_xing_child}}`，role: `reference_image`，用途：锁定许行手部、校服和文具盒动作。
-  - `{{img.xu_mingyuan_ep01}}`，role: `reference_image`，用途：锁定父亲移开粥碗的手部和年轻家庭状态。
-  - `{{img.lin_an_ep01}}`，role: `reference_image`，用途：锁定母亲伸手想收水费单又停住的动作。
-  - `{{img.scene_morning_bill}}`，role: `reference_image`，用途：锁定清晨饭桌、水费单、粥碗、筷子和文具盒位置。
+  - `{{img.xu_xing_child}}`，path: `short-drama/assets/characters/xu-xing/child/xu-xing-child-sheet-v01.png`，role: `reference_image`，用途：锁定许行手部、校服和文具盒动作。
+  - `{{img.xu_mingyuan_ep01}}`，path: `short-drama/assets/characters/ep01-glass-crack/xu-mingyuan/xu-mingyuan-ep01-sheet-v03.png`，role: `reference_image`，用途：锁定父亲移开粥碗的手部和年轻家庭状态。
+  - `{{img.lin_an_ep01}}`，path: `short-drama/assets/characters/ep01-glass-crack/lin-an/lin-an-ep01-sheet-v03.png`，role: `reference_image`，用途：锁定母亲伸手想收水费单又停住的动作。
+  - `{{img.scene_morning_bill}}`，path: `short-drama/assets/scenes/ep01-glass-crack/ep01-next-morning-bill-sheet-v01.png`，role: `reference_image`，用途：锁定清晨饭桌、水费单、粥碗、筷子和文具盒位置。
 - 段落目的：用次日早饭和水费单动作收束，表现许行开始理解家庭代价。
 - 镜头结构：清晨饭桌建立 -> 母亲伸手停住 -> 许行按住纸角 -> 父亲移碗 -> 许行对折放进文具盒。
 - 动作节拍：0-3s 晨光和饭桌建立；3-5s 母亲手伸向水费单停住；5-7s 许行先按住纸角；7-9s 父亲轻轻移开粥碗；9-13s 许行把水费单对折放进文具盒底层，手指停一秒再盖上。
