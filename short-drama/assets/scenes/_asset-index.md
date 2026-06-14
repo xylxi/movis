@@ -16,11 +16,11 @@
 
 | asset_id | scene_id | asset_type | episode | file | status | note |
 | --- | --- | --- | --- | --- | --- | --- |
-| `ep01-school-playground-building-sheet-v01` | `ep01-school-playground-building` | `scene_sheet` | `ep01` | `short-drama/assets/scenes/ep01-glass-crack/ep01-school-playground-building-sheet-v01.png` | `planned` | 操场、教学楼、公告栏和学生围观距离设定图 |
-| `ep01-broken-window-risk-sheet-v01` | `ep01-broken-window-risk` | `scene_sheet` | `ep01` | `short-drama/assets/scenes/ep01-glass-crack/ep01-broken-window-risk-sheet-v01.png` | `planned` | 三楼破窗、玻璃落点、主任行走路线设定图 |
-| `ep01-school-office-clinic-sheet-v01` | `ep01-school-office-clinic` | `scene_sheet` | `ep01` | `short-drama/assets/scenes/ep01-glass-crack/ep01-school-office-clinic-sheet-v01.png` | `planned` | 校内处理、办公室和医务处理空间设定图 |
-| `ep01-family-dining-review-sheet-v01` | `ep01-family-dining-review` | `scene_sheet` | `ep01` | `short-drama/assets/scenes/ep01-glass-crack/ep01-family-dining-review-sheet-v01.png` | `planned` | 当晚饭桌复盘、维修单和蓝色记录本设定图 |
-| `ep01-next-morning-bill-sheet-v01` | `ep01-next-morning-bill` | `scene_sheet` | `ep01` | `short-drama/assets/scenes/ep01-glass-crack/ep01-next-morning-bill-sheet-v01.png` | `planned` | 次日早饭、水费单、粥碗和文具盒动作设定图 |
+| `ep01-school-playground-building-sheet-v01` | `ep01-school-playground-building` | `scene_sheet` | `ep01` | `short-drama/assets/scenes/ep01-glass-crack/ep01-school-playground-building-sheet-v01.png` | `generated` | 操场、教学楼、公告栏和学生围观距离设定图，待人工确认 |
+| `ep01-broken-window-risk-sheet-v01` | `ep01-broken-window-risk` | `scene_sheet` | `ep01` | `short-drama/assets/scenes/ep01-glass-crack/ep01-broken-window-risk-sheet-v01.png` | `generated` | 三楼破窗、玻璃落点、主任行走路线设定图，待人工确认 |
+| `ep01-school-office-clinic-sheet-v01` | `ep01-school-office-clinic` | `scene_sheet` | `ep01` | `short-drama/assets/scenes/ep01-glass-crack/ep01-school-office-clinic-sheet-v01.png` | `generated` | 校内处理、办公室和医务处理空间设定图，待人工确认 |
+| `ep01-family-dining-review-sheet-v01` | `ep01-family-dining-review` | `scene_sheet` | `ep01` | `short-drama/assets/scenes/ep01-glass-crack/ep01-family-dining-review-sheet-v01.png` | `generated` | 当晚饭桌复盘、维修单和蓝色记录本设定图，待人工确认 |
+| `ep01-next-morning-bill-sheet-v01` | `ep01-next-morning-bill` | `scene_sheet` | `ep01` | `short-drama/assets/scenes/ep01-glass-crack/ep01-next-morning-bill-sheet-v01.png` | `generated` | 次日早饭、水费单、粥碗和文具盒动作设定图，待人工确认 |
 
 ## 更新规则
 
