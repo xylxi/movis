@@ -359,7 +359,7 @@ Use `apply_patch` to create `projects/frozen-rebirth-revenge/assets/_asset-index
 
 ```bash
 test "$(rg -c '^### @' projects/frozen-rebirth-revenge/assets/asset-briefs-v2-pilot.md)" -eq 8
-test "$(rg -c '^\\| @' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md)" -eq 8
+test "$(awk -F'|' '$2 ~ /@/ && $2 !~ /@素材名/ {count++} END {print count+0}' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md)" -eq 8
 rg -n "摄影语言：" projects/frozen-rebirth-revenge/assets/asset-briefs-v2-pilot.md
 rg -n "连续性约束：" projects/frozen-rebirth-revenge/assets/asset-briefs-v2-pilot.md
 rg -n "质检重点：" projects/frozen-rebirth-revenge/assets/asset-briefs-v2-pilot.md
@@ -543,7 +543,7 @@ Expected: the `test` command exits `0`; each `rg` command prints at least one ma
 ```bash
 comm -3 \
   <(rg '^### @' projects/frozen-rebirth-revenge/assets/image-generation-prompts-v2-pilot.md | sed 's/^### //' | sort) \
-  <(rg '^\\| @' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md | awk -F'|' '{gsub(/^ +| +$/, "", $2); print $2}' | sort)
+  <(awk -F'|' '$2 ~ /@/ && $2 !~ /@素材名/ {gsub(/^ +| +$/, "", $2); print $2}' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md | sort)
 ```
 
 Expected: no output.
@@ -599,7 +599,7 @@ Use `apply_patch` to create `projects/frozen-rebirth-revenge/reviews/asset-promp
 | 项目内规范已存在 | 通过 | `assets/asset-prompt-guidelines.md` |
 | v2 brief 试点共 8 个素材 | 通过 | `rg -c '^### @' assets/asset-briefs-v2-pilot.md` 返回 8 |
 | v2 prompt 试点共 8 个素材 | 通过 | `rg -c '^### @' assets/image-generation-prompts-v2-pilot.md` 返回 8 |
-| v2 索引共 8 个素材 | 通过 | `rg -c '^\\| @' assets/_asset-index-v2-pilot.md` 返回 8 |
+| v2 索引共 8 个素材 | 通过 | `awk -F'|' '$2 ~ /@/ && $2 !~ /@素材名/ {count++} END {print count+0}' assets/_asset-index-v2-pilot.md` 返回 8 |
 | prompt 名称与索引名称一致 | 通过 | `comm -3` 对比无输出 |
 
 ## 剧本素材闸门
@@ -624,10 +624,10 @@ Use `apply_patch` to create `projects/frozen-rebirth-revenge/reviews/asset-promp
 ```bash
 test "$(rg -c '^### @' projects/frozen-rebirth-revenge/assets/asset-briefs-v2-pilot.md)" -eq 8
 test "$(rg -c '^### @' projects/frozen-rebirth-revenge/assets/image-generation-prompts-v2-pilot.md)" -eq 8
-test "$(rg -c '^\\| @' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md)" -eq 8
+test "$(awk -F'|' '$2 ~ /@/ && $2 !~ /@素材名/ {count++} END {print count+0}' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md)" -eq 8
 comm -3 \
   <(rg '^### @' projects/frozen-rebirth-revenge/assets/image-generation-prompts-v2-pilot.md | sed 's/^### //' | sort) \
-  <(rg '^\\| @' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md | awk -F'|' '{gsub(/^ +| +$/, "", $2); print $2}' | sort)
+  <(awk -F'|' '$2 ~ /@/ && $2 !~ /@素材名/ {gsub(/^ +| +$/, "", $2); print $2}' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md | sort)
 git diff --check -- \
   projects/frozen-rebirth-revenge/assets/asset-prompt-guidelines.md \
   projects/frozen-rebirth-revenge/assets/asset-briefs-v2-pilot.md \
@@ -652,10 +652,10 @@ Expected: both `rg` commands print one matching line, and `git diff --check` exi
 ```bash
 test "$(rg -c '^### @' projects/frozen-rebirth-revenge/assets/asset-briefs-v2-pilot.md)" -eq 8
 test "$(rg -c '^### @' projects/frozen-rebirth-revenge/assets/image-generation-prompts-v2-pilot.md)" -eq 8
-test "$(rg -c '^\\| @' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md)" -eq 8
+test "$(awk -F'|' '$2 ~ /@/ && $2 !~ /@素材名/ {count++} END {print count+0}' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md)" -eq 8
 comm -3 \
   <(rg '^### @' projects/frozen-rebirth-revenge/assets/image-generation-prompts-v2-pilot.md | sed 's/^### //' | sort) \
-  <(rg '^\\| @' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md | awk -F'|' '{gsub(/^ +| +$/, "", $2); print $2}' | sort)
+  <(awk -F'|' '$2 ~ /@/ && $2 !~ /@素材名/ {gsub(/^ +| +$/, "", $2); print $2}' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md | sort)
 git diff --check -- \
   projects/frozen-rebirth-revenge/assets/asset-prompt-guidelines.md \
   projects/frozen-rebirth-revenge/assets/asset-briefs-v2-pilot.md \
@@ -690,10 +690,10 @@ test -f projects/frozen-rebirth-revenge/assets/image-generation-prompts-v2-pilot
 test -f projects/frozen-rebirth-revenge/reviews/asset-prompt-system-quality-check.md
 test "$(rg -c '^### @' projects/frozen-rebirth-revenge/assets/asset-briefs-v2-pilot.md)" -eq 8
 test "$(rg -c '^### @' projects/frozen-rebirth-revenge/assets/image-generation-prompts-v2-pilot.md)" -eq 8
-test "$(rg -c '^\\| @' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md)" -eq 8
+test "$(awk -F'|' '$2 ~ /@/ && $2 !~ /@素材名/ {count++} END {print count+0}' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md)" -eq 8
 comm -3 \
   <(rg '^### @' projects/frozen-rebirth-revenge/assets/image-generation-prompts-v2-pilot.md | sed 's/^### //' | sort) \
-  <(rg '^\\| @' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md | awk -F'|' '{gsub(/^ +| +$/, "", $2); print $2}' | sort)
+  <(awk -F'|' '$2 ~ /@/ && $2 !~ /@素材名/ {gsub(/^ +| +$/, "", $2); print $2}' projects/frozen-rebirth-revenge/assets/_asset-index-v2-pilot.md | sort)
 git diff --check -- \
   projects/frozen-rebirth-revenge/assets/asset-prompt-guidelines.md \
   projects/frozen-rebirth-revenge/assets/asset-briefs-v2-pilot.md \
