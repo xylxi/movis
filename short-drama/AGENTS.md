@@ -31,7 +31,7 @@
 - 所有视觉资产必须先查 `_asset-index.md`，已有 `approved` 资产时不重复生成，除非用户明确要求重做或迭代。
 - 生成后只能把状态更新为 `generated`，等待用户确认后才能改成 `approved`。
 - `generated` 资产不能作为后续一致性参考；只有 `approved` 资产可以进入分镜、关键帧和视频提示词。
-- 资产文件必须保存到 `short-drama/assets/` 下，不能只保留在默认生成目录。
+- 最终交接图片素材必须保存到 `short-drama/assets/` 根目录，使用中文可读文件名；内部索引可以保留资产 ID、角色 ID、场景 ID 和版本信息。
 
 ## 角色 ID 规则
 
@@ -55,7 +55,7 @@
 - 人物设定图应服务短剧一致性，避免明星脸、玄幻感、系统爽文感、过度精英化或夸张网感。
 - 单张角色照只能作为补充素材，不作为锁定人物各形态的主资产，除非用户明确要求只生成照片。
 - 设定图中不要依赖可读文字传递关键信息；标签和说明以 Markdown 资产索引和规格卡为准。
-- 生成后必须保存到 `short-drama/assets/characters/` 下对应目录，并更新 `_asset-index.md`。
+- 生成后必须保存或复制到 `short-drama/assets/` 根目录，文件名使用中文素材名，并更新 `_asset-index.md`。
 - 未经用户确认，不生成透明底；如需透明底，先使用 image2 纯色抠图背景，再本地去背景。
 
 ## 场景设定图生成规则
@@ -67,7 +67,7 @@
 - 场景设定图必须尽量包含：主视角、反向视角、平面关系或动线示意、关键道具区、光线/色调条、三个可拍动作点、禁用元素说明。
 - 场景设定图应服务短剧拍摄和后续分镜，必须能看清人物站位、出入口、危险点和道具位置。
 - 单张场景氛围图只能作为补充素材，不作为锁定空间关系的主资产，除非用户明确要求只生成氛围图。
-- 生成后必须保存到 `short-drama/assets/scenes/` 下对应目录，并更新 `_asset-index.md`。
+- 生成后必须保存或复制到 `short-drama/assets/` 根目录，文件名使用中文素材名，并更新 `_asset-index.md`。
 
 ## 目录约定
 
@@ -79,24 +79,26 @@ short-drama/
     episode-rosters/
       01-glass-crack.md
   assets/
+    许行幼年设定图.png
+    许明远设定图.png
+    林安设定图.png
+    教导主任设定图.png
+    操场教学楼场景图.png
+    三楼破窗场景图.png
+    学校办公室场景图.png
+    当晚饭桌场景图.png
+    次日水费单场景图.png
     characters/
       _asset-index.md
-      xu-xing/
-        child/
-        youth/
-        adult/
-      ep01-glass-crack/
-        xu-mingyuan/
-        lin-an/
-        teaching-director/
     scenes/
       _asset-index.md
-      ep01-glass-crack/
   scenes/
     scene-bible.md
     generation-briefs/
       01-glass-crack-scene-sheets.md
 ```
+
+分镜、关键帧和视频交接中的引用统一使用 `@中文素材名`；对应文件必须是 `short-drama/assets/中文素材名.png`，例如 `@许行幼年设定图` 对应 `short-drama/assets/许行幼年设定图.png`。
 
 ## 资产状态
 

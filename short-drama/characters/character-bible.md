@@ -67,3 +67,16 @@
 4. `_asset-index.md` 中没有可复用的 `approved` 资产。
 5. 本次生成不是分镜、视频提示词或关键帧生成。
 6. 若没有特殊说明，本次优先生成 `character_sheet`，不只生成 `portrait`。
+
+## 素材文件名规则
+
+人物图片最终交接文件统一保存到 `short-drama/assets/` 根目录，使用中文可读名，并与分镜或视频交接中的 `@素材名` 保持一致。
+
+示例：
+
+- `@许行幼年设定图` -> `short-drama/assets/许行幼年设定图.png`
+- `@许明远设定图` -> `short-drama/assets/许明远设定图.png`
+- `@林安设定图` -> `short-drama/assets/林安设定图.png`
+- `@教导主任设定图` -> `short-drama/assets/教导主任设定图.png`
+
+角色 ID、版本号和历史迭代记录只写入索引，不作为正式交接图片文件名。

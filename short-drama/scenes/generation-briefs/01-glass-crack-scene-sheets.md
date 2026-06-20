@@ -40,11 +40,11 @@
 
 | asset_id | scene_id | 场景 | asset_type | 资产路径 | 当前状态 |
 | --- | --- | --- | --- | --- | --- |
-| `ep01-school-playground-building-sheet-v01` | `ep01-school-playground-building` | 操场与教学楼下 | `scene_sheet` | `short-drama/assets/scenes/ep01-glass-crack/ep01-school-playground-building-sheet-v01.png` | 以索引为准 |
-| `ep01-broken-window-risk-sheet-v01` | `ep01-broken-window-risk` | 三楼破窗危险关系 | `scene_sheet` | `short-drama/assets/scenes/ep01-glass-crack/ep01-broken-window-risk-sheet-v01.png` | 以索引为准 |
-| `ep01-school-office-clinic-sheet-v01` | `ep01-school-office-clinic` | 学校办公室和医务处理 | `scene_sheet` | `short-drama/assets/scenes/ep01-glass-crack/ep01-school-office-clinic-sheet-v01.png` | 以索引为准 |
-| `ep01-family-dining-review-sheet-v01` | `ep01-family-dining-review` | 当晚饭桌复盘 | `scene_sheet` | `short-drama/assets/scenes/ep01-glass-crack/ep01-family-dining-review-sheet-v01.png` | 以索引为准 |
-| `ep01-next-morning-bill-sheet-v01` | `ep01-next-morning-bill` | 次日水费单动作 | `scene_sheet` | `short-drama/assets/scenes/ep01-glass-crack/ep01-next-morning-bill-sheet-v01.png` | 以索引为准 |
+| `ep01-school-playground-building-sheet-v01` | `ep01-school-playground-building` | 操场与教学楼下 | `scene_sheet` | `short-drama/assets/操场教学楼场景图.png` | 以索引为准 |
+| `ep01-broken-window-risk-sheet-v01` | `ep01-broken-window-risk` | 三楼破窗危险关系 | `scene_sheet` | `short-drama/assets/三楼破窗场景图.png` | 以索引为准 |
+| `ep01-school-office-clinic-sheet-v01` | `ep01-school-office-clinic` | 学校办公室和医务处理 | `scene_sheet` | `short-drama/assets/学校办公室场景图.png` | 以索引为准 |
+| `ep01-family-dining-review-sheet-v01` | `ep01-family-dining-review` | 当晚饭桌复盘 | `scene_sheet` | `short-drama/assets/当晚饭桌场景图.png` | 以索引为准 |
+| `ep01-next-morning-bill-sheet-v01` | `ep01-next-morning-bill` | 次日水费单动作 | `scene_sheet` | `short-drama/assets/次日水费单场景图.png` | 以索引为准 |
 
 ## 场景规格
 
@@ -102,7 +102,7 @@
 
 ## 生图后处理
 
-- 图片必须保存到索引表中对应路径。
+- 图片必须保存到索引表中对应路径，最终交接场景图统一位于 `short-drama/assets/` 根目录，且一张图只对应一个场景或空间功能。
 - 生成后将对应 asset 状态从 `planned` 改为 `generated`。
 - 只有用户确认采用后，才能改为 `approved`。
 - 若某张场景设定图未体现空间关系、动线或关键道具，优先重生成，不用单张氛围图凑数。

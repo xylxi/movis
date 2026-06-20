@@ -49,14 +49,10 @@
 
 | asset_id | character_id | 角色 | asset_type | 资产路径 | 当前状态 |
 | --- | --- | --- | --- | --- | --- |
-| `xu-xing-child-sheet-v01` | `xu-xing-child` | 许行 | `character_sheet` | `short-drama/assets/characters/xu-xing/child/xu-xing-child-sheet-v01.png` | 以索引为准 |
-| `xu-mingyuan-ep01-sheet-v01` | `xu-mingyuan-ep01` | 许明远 | `character_sheet` | `short-drama/assets/characters/ep01-glass-crack/xu-mingyuan/xu-mingyuan-ep01-sheet-v01.png` | 以索引为准 |
-| `lin-an-ep01-sheet-v01` | `lin-an-ep01` | 林安 | `character_sheet` | `short-drama/assets/characters/ep01-glass-crack/lin-an/lin-an-ep01-sheet-v01.png` | 以索引为准 |
-| `xu-mingyuan-ep01-sheet-v02` | `xu-mingyuan-ep01` | 许明远 | `character_sheet` | `short-drama/assets/characters/ep01-glass-crack/xu-mingyuan/xu-mingyuan-ep01-sheet-v02.png` | 以索引为准 |
-| `lin-an-ep01-sheet-v02` | `lin-an-ep01` | 林安 | `character_sheet` | `short-drama/assets/characters/ep01-glass-crack/lin-an/lin-an-ep01-sheet-v02.png` | 以索引为准 |
-| `xu-mingyuan-ep01-sheet-v03` | `xu-mingyuan-ep01` | 许明远 | `character_sheet` | `short-drama/assets/characters/ep01-glass-crack/xu-mingyuan/xu-mingyuan-ep01-sheet-v03.png` | 以索引为准 |
-| `lin-an-ep01-sheet-v03` | `lin-an-ep01` | 林安 | `character_sheet` | `short-drama/assets/characters/ep01-glass-crack/lin-an/lin-an-ep01-sheet-v03.png` | 以索引为准 |
-| `teaching-director-ep01-sheet-v01` | `teaching-director-ep01` | 教导主任 | `character_sheet` | `short-drama/assets/characters/ep01-glass-crack/teaching-director/teaching-director-ep01-sheet-v01.png` | 以索引为准 |
+| `xu-xing-child-sheet-v01` | `xu-xing-child` | 许行 | `character_sheet` | `short-drama/assets/许行幼年设定图.png` | 以索引为准 |
+| `xu-mingyuan-ep01-sheet-v03` | `xu-mingyuan-ep01` | 许明远 | `character_sheet` | `short-drama/assets/许明远设定图.png` | 以索引为准 |
+| `lin-an-ep01-sheet-v03` | `lin-an-ep01` | 林安 | `character_sheet` | `short-drama/assets/林安设定图.png` | 以索引为准 |
+| `teaching-director-ep01-sheet-v01` | `teaching-director-ep01` | 教导主任 | `character_sheet` | `short-drama/assets/教导主任设定图.png` | 以索引为准 |
 
 ## 角色设定图规格
 
@@ -112,7 +108,7 @@
 
 ## 生图后处理
 
-- 图片必须保存到索引表中对应路径。
+- 图片必须保存到索引表中对应路径，最终交接图片统一位于 `short-drama/assets/` 根目录。
 - 生成后将对应 asset 状态从 `planned` 改为 `generated`。
 - 只有用户确认采用后，才能改为 `approved`。
 - 若某张设定图未体现三视图、表情排或拆解区，优先重生成，不用单张照片凑数。

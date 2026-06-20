@@ -14,7 +14,7 @@
 -> 资产规格 brief
 -> 资产索引检查
 -> image2 / image_gen 生图
--> 保存到 assets
+-> 保存到 assets 根目录，使用中文素材文件名
 -> 更新索引为 generated
 -> 人工确认
 -> 更新索引为 approved
@@ -30,6 +30,24 @@
 `superseded`：被新版本替代，不再作为默认参考。
 
 禁止把 `generated` 资产当作 `approved` 使用。
+
+## 素材命名和目录
+
+最终交接图片素材统一保存到 `short-drama/assets/` 根目录，不按人物、场景或集数拆多层目录。
+
+分镜、视频交接和实际文件名必须一致：
+
+```text
+@中文素材名 -> short-drama/assets/中文素材名.png
+```
+
+示例：
+
+- `@许行幼年设定图` -> `short-drama/assets/许行幼年设定图.png`
+- `@学校办公室场景图` -> `short-drama/assets/学校办公室场景图.png`
+- `@当晚饭桌场景图` -> `short-drama/assets/当晚饭桌场景图.png`
+
+内部 `asset_id`、`character_id`、`scene_id` 和版本号写入索引，不进入交接文件名。
 
 ## 人物资产规则
 
@@ -101,7 +119,7 @@ Avoid:
 
 ## 每次生图后检查
 
-- 图片已保存到工作区 `short-drama/assets/` 下。
+- 图片已保存到工作区 `short-drama/assets/` 根目录，文件名与 `@中文素材名` 一致。
 - 索引中的 `file` 路径真实存在。
 - 索引状态已从 `planned` 更新为 `generated`。
 - 未把资产状态直接改成 `approved`。

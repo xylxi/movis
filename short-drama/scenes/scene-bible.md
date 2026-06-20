@@ -67,3 +67,15 @@
 4. 已读取 `short-drama/assets/scenes/_asset-index.md`。
 5. `_asset-index.md` 中没有可复用的 `approved` 资产。
 6. 本次优先生成 `scene_sheet`，不只生成氛围图。
+
+## 素材文件名规则
+
+场景图片最终交接文件统一保存到 `short-drama/assets/` 根目录，使用中文可读名，并与分镜或视频交接中的 `@素材名` 保持一致。
+
+示例：
+
+- `@操场教学楼场景图` -> `short-drama/assets/操场教学楼场景图.png`
+- `@三楼破窗场景图` -> `short-drama/assets/三楼破窗场景图.png`
+- `@学校办公室场景图` -> `short-drama/assets/学校办公室场景图.png`
+
+单张场景图只对应一个场景或空间功能。给视频模型使用的场景图不得包含多个场景拼版、动线标记、分镜框、箭头或说明文字。
