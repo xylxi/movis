@@ -1,134 +1,83 @@
 # AGENTS.md
 
-## 项目定位
+## 工作区定位
 
-本项目是《第九条路》的小说母本与后续短剧化工作区。
+本仓库是剧本开发与视频化生产工作区。正式剧本项目必须进入 `projects/<project-slug>/`，每个项目独立维护故事事实、角色、场景、素材、镜头节拍和视频交付。
 
-- 类型：家庭成长 + 轻科幻人生分支 + 现实亲情
-- 主角：许行
-- 父亲：许明远，普通职场员工
-- 母亲：林安，全职主妇
-- 核心主题：父母真正能给孩子的，不是一条不会错的人生路，而是一套自己做选择、承担选择的能力。
+当前正式项目：
 
-工作顺序以小说母本优先：
-
-1. 小说母本
-2. 短剧改编
-3. 人物设定图与场景设定图
-4. 分镜与视频提示词
-5. AI 视频生成
-6. 抖音发布与数据复盘
+- `projects/frozen-rebirth-revenge/PROJECT.md`：极寒重生复仇爽剧项目入口。
 
 ## Agent 工作规则
 
 - superpower 执行计划默认使用 Subagent-Driven 方式。
-- 开始写作或改稿前，先读取相关设定、章节卡和风格指南。
-- 涉及短剧人物设定图、角色照、场景设定图、场景图、关键帧、分镜、视频提示词或 image2 生图前，必须先读取 `short-drama/AGENTS.md`。
-- 不要直接覆盖已有正文版本；需要大改时优先新建临时迭代稿，除非用户明确要求覆盖。定稿后使用无版本号的正典文件名。
-- 后续创作以 `novel/chapter-ledger.md` 标记的正典草稿路径为准，不混用旧稿细节。
+- 处理项目任务前，先读取对应 `projects/<project-slug>/PROJECT.md`。
+- 通用剧本规范优先使用个人 skill `script-development-director`。
+- Seedance 2.0 视频提示词优先使用 `seedance2-video-director`。
+- 项目事实只从当前项目目录读取，不混用其他剧本的人物、素材、场景和视频片段。
+- 不要直接覆盖已有正文版本；需要大改时优先新建临时迭代稿，除非用户明确要求覆盖。
 - 保留用户已有改动，不要回滚未由你创建的文件。
 - 涉及 `.env` 时只读取变量，不输出 API key。
 
-## DeepSeek 模型使用规则
+## 项目结构
 
-- 正式写作、润色、改稿：默认使用 `deepseek-v4-pro` 的非思考模式。
-- 审稿、结构诊断、长期伏笔推演：默认使用 `deepseek-v4-pro` 的思考模式，`reasoning_effort` 设为 `high`。
-- 批量低成本初筛或快速多轮打分时，才考虑 `deepseek-v4-flash`。
-- 新任务不要默认使用旧模型名 `deepseek-chat` 或 `deepseek-reasoner`；它们只是兼容别名，后续会弃用。
-- 创意写作可使用较高 `temperature`；审稿打分优先低随机性和稳定结构化输出。
-
-## 关键文件
-
-- `README.md`：项目总览和写作规则。
-- `novel/series-bible.md`：小说母本设定总纲。
-- `novel/family-dossier.md`：家庭背景硬设定。
-- `novel/chapter-template.md`：章节写作卡模板。
-- `novel/chapter-cards/`：各章写作卡。
-- `novel/drafts/`：章节正文草稿。
-- `novel/writing-style-guide.md`：后续章节写作风格指南。
-- `novel/character-continuity.md`：人物连续性账本，跟踪人物核心、状态和变化变量。
-- `novel/chapter-ledger.md`：章节账本，记录已发生事实、真实代价和下一章债务。
-- `novel/foreshadowing-ledger.md`：伏笔账本，跟踪物件、能力异样和关系暗线。
-- `novel/story-control-checklist.md`：自动推荐、信息充足检查、打分修改和人工确认闸门。
-- `novel/chapter-navigators/`：每章开写前的创作导航图。
-- `research/deepseek-v4pro-01-glass-crack-iteration-log.md`：第一章 V4-Pro 最终审稿迭代日志。
-- `research/market-and-title-notes.md`：赛道和片名研究记录。
-- `short-drama/AGENTS.md`：短剧视觉资产与 image2 生图强制规则。
-- `short-drama/visual-asset-workflow.md`：短剧人物、场景、道具、关键帧、分镜和视频提示词的统一资产闸门。
-- `short-drama/characters/character-bible.md`：角色视觉总控和角色 ID 规则。
-- `short-drama/assets/characters/_asset-index.md`：已生成角色视觉资产索引。
-- `short-drama/scenes/scene-bible.md`：场景视觉总控和场景 ID 规则。
-- `short-drama/assets/scenes/_asset-index.md`：已生成场景视觉资产索引。
-
-## 写作流程
-
-每章按以下顺序推进：
-
-1. 读取 `novel/series-bible.md`、`novel/family-dossier.md` 和对应章节卡。
-2. 读取 `novel/writing-style-guide.md`、`novel/character-continuity.md`、`novel/chapter-ledger.md`、`novel/foreshadowing-ledger.md` 和 `novel/story-control-checklist.md`。
-3. 为新章创建或更新 `novel/chapter-navigators/` 下的章节导航图，先确认信息是否充足。
-4. 先确认章节功能、现实事件、主角选择、未来分支、代价、家庭压力数字和章尾动作。
-5. 写正文时，让家庭背景进入事件本身，不要事后说明。
-6. 写完后回到章节卡、风格指南、故事控制清单和章节导航图自检。
-7. 需要 DeepSeek 审查时，记录评分、修改方向和停止条件。
-8. 章节定稿后，更新人物连续性账本、章节账本、伏笔账本；只有可复用规则才写入风格指南。
-
-## 自动推荐规则
-
-Agent 对新章方向、补信息、改稿和账本更新提出推荐时，必须使用以下字段：
+标准项目目录：
 
 ```text
-推荐动作：
-依据证据：
-解决的问题：
-预期收益：
-潜在风险：
-置信度：
-是否允许自动执行：
+projects/<project-slug>/          # 单个剧本项目目录，slug 使用小写英文、数字和连字符
+├── PROJECT.md                    # 项目入口：定位、状态、正典文件和交付入口
+├── bible.md                      # 项目设定总纲：世界观、人物关系、冲突和连续性规则
+├── episodes/                     # 单集剧本目录，保存 episode-xx-script.md
+├── assets/                       # 素材目录，保存素材 brief、索引、生图提示词和最终图片
+├── storyboards/                  # 镜头节拍目录，服务 Seedance 的段内时间线和画面动作
+├── video-generation/             # 视频生成交付目录，保存可直接输入模型的 handoff
+├── reviews/                      # 审查和复盘目录，保存质量检查、素材总览和问题记录
+└── research/                     # 可选研究目录，保存题材、竞品、平台和资料调研
 ```
 
-- 没有 `依据证据` 的推荐不能进入正文创作。
-- 置信度 `85%` 及以上，才允许自动执行低风险写作或改稿。
-- 置信度 `70%-84%`，只能给主推荐，执行前需要确认。
-- 置信度低于 `70%`，不写正文，只补信息或请求确认。
-- 涉及人物核心、能力规则、九个人生节点顺序、作品类型变化的推荐，必须人工确认。
+当前项目关键文件：
 
-冲突处理优先级：
+- `projects/frozen-rebirth-revenge/PROJECT.md`：项目入口和正典索引。
+- `projects/frozen-rebirth-revenge/bible.md`：设定总纲。
+- `projects/frozen-rebirth-revenge/episodes/episode-01-script.md`：第一集正典剧本。
+- `projects/frozen-rebirth-revenge/assets/asset-briefs.md`：人物、场景、道具素材 brief。
+- `projects/frozen-rebirth-revenge/assets/_asset-index.md`：素材索引。
+- `projects/frozen-rebirth-revenge/assets/image-generation-prompts.md`：生图提示词。
+- `projects/frozen-rebirth-revenge/storyboards/episode-01-shot-beats.md`：Seedance 镜头节拍。
+- `projects/frozen-rebirth-revenge/video-generation/episode-01-handoff.md`：视频生成交付。
+- `projects/frozen-rebirth-revenge/reviews/episode-01-quality-check.md`：质量检查。
 
-```text
-总纲 > 家庭档案 > 人物连续性账本 / 章节账本 / 伏笔账本 > 章节卡 > 章节导航推荐 > 草稿
-```
+## 剧本生产流程
 
-## 写作风格硬规则
+每个项目按以下顺序推进：
 
-- 每章前 50 字必须有外部压力和主角身体反应。
-- 未来分支只在关键选择点出现，每条分支用一个具体感官触发。
-- 未来分支不是开挂工具，不提供考试答案、彩票、股票等具体利益信息。
-- 家庭压力要用具体数字和动作呈现，例如维修费、水费、校服、饭钱、手机消息。
-- 父母少说金句，优先通过行动顺序影响孩子：确认伤害、承担责任、复盘问题。
-- 许行的心理描写不要连续过长，优先用动作和环境互动表达。
-- 章尾不要作者预告，使用未完成动作、未说出口的话或未解决问题制造追读。
+1. 项目开工：锁定类型、目标平台、核心卖点、主角欲望、敌人/阻力和结尾状态。
+2. 项目 bible：整理世界观、人物关系、核心冲突、爽点机制和连续性规则。
+3. 单集剧本：写可拍场次、动作、对白、道具变化和情绪转折。
+4. 剧本审查：检查因果、爽点、可拍性、节奏、人物动机和结尾钩子。
+5. 素材 brief：规划人物设定图、场景图、道具图和必要关键帧。
+6. 生图与索引：素材进入项目 `assets/` 根目录，用户确认后标记可用。
+7. 镜头节拍：把剧本拆成 Seedance 可执行的时间线、动作、镜头和声音。
+8. 视频交付：输出可直接输入视频模型的提示词、素材引用和禁止项。
 
-## 短剧视觉资产规则
+## 素材规则
 
-任何人物设定图、角色照、场景设定图、场景图、关键帧、分镜和视频提示词生成前，必须先读取：
+- 图片素材统一放在项目 `assets/` 根目录，不按人物、场景、集数分多层级保存最终交接图。
+- 镜头节拍和视频交接引用素材使用 `@中文素材名`。
+- 实际文件名必须与 `@素材名` 去掉 `@` 后一致，例如 `@暴雪楼道场景图` 对应 `assets/暴雪楼道场景图.png`。
+- 单张场景图只对应一个场景或一个空间功能；不要把多个场景、动线标记、镜头框、箭头和说明文字拼进给视频模型使用的参考图。
+- 已确认素材才能进入视频提示词；废稿、旧版本和未确认图不得混入正式交付。
 
-1. `short-drama/AGENTS.md`
-2. `short-drama/visual-asset-workflow.md`
-3. `short-drama/adaptation-control.md`
-4. 对应资产总控：人物读 `short-drama/characters/character-bible.md`，场景读 `short-drama/scenes/scene-bible.md`
-5. 对应规格文件或生成 brief
-6. 对应资产索引：人物读 `short-drama/assets/characters/_asset-index.md`，场景读 `short-drama/assets/scenes/_asset-index.md`
-7. 对应脚本和视觉入口清单
+## Seedance 交付规则
 
-不得跳过资产 ID、角色/场景 ID、年龄版本、空间功能和资产索引检查直接生图。人物视觉资产默认优先生成人物设定图，用三视图、表情、服装/道具拆解、配色和姿态锁定人物形态；场景视觉资产默认优先生成场景设定图，用主视角、反向视角、平面关系、关键道具、光线色调和可拍动作点锁定空间形态。单张角色照或氛围图只作为补充。已有 `approved` 资产时，不得重复生成同一对象同一版本，除非用户明确要求重做或迭代。
+- 视频交付只保留模型可执行字段：素材、时长、时间线、动作、镜头、声音、提示词、禁止项。
+- “镜头节拍”是一个视频段内部的时间线，不等于全部独立生成任务。
+- 视频延长只在同一空间、同一动作链、同一镜头方向需要承接上一段末帧时使用；换时间、换空间、主观闪回或情绪断裂时独立生成。
+- 画面风格词必须落到主体、空间、光影、镜头、动作和时间线，不用空泛形容词堆叠。
 
-## 禁忌
+## 质量闸门
 
-- 不写父母控制孩子。
-- 不写鸡娃对抗。
-- 不写龙脉、龙鳞、玄幻命定。
-- 不把未来分支写成系统或爽文开挂。
-- 不让父母频繁说教育金句。
-- 不把母亲写成纯牺牲者，也不把父亲写成隐忍伟人。
-- 不让每章结尾都靠强反转，小说母本要保留情感积累。
+- 没有 PROJECT 和 bible，不进入正式剧本。
+- 剧本未审查通过，不生成正式人物图、场景图、关键帧、镜头节拍或视频提示词。
+- 素材名、索引名、提示词引用名和文件名必须一致。
+- 视频交付前检查每段是否有明确画面目标、动作节拍、镜头运动、声音/对白和禁止项。

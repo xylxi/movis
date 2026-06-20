@@ -1,54 +1,27 @@
-# 第九条路
+# Movies 剧本工作区
 
-这是《第九条路》的小说母本与后续短剧化项目工作区。
+这是剧本开发与视频化生产工作区。正式剧本项目统一放入 `projects/<project-slug>/`，每个项目独立维护 bible、剧本、素材、镜头节拍和视频生成交付。
 
-## 目标
+## 项目入口
 
-先完成小说母本，再从小说中提炼短剧、角色图、场景图、分镜、AI 视频和抖音验证素材。
-
-工作顺序：
-
-1. 小说母本
-2. 短剧改编
-3. 角色图与场景图
-4. 分镜与视频提示词
-5. AI 视频生成
-6. 抖音发布与数据复盘
-
-## 当前定位
-
-- 正式片名：第九条路
-- 类型：家庭成长 + 轻科幻人生分支 + 现实亲情
-- 主角：许行
-- 父亲：许明远，普通职场员工
-- 母亲：林安，全职主妇
-- 核心主题：父母真正能给孩子的，不是一条不会错的人生路，而是一套自己做选择、承担选择的能力。
+| 项目 | slug | 状态 | 入口 |
+| --- | --- | --- | --- |
+| 极寒重生复仇爽剧 | `frozen-rebirth-revenge` | 当前正式项目 | `projects/frozen-rebirth-revenge/PROJECT.md` |
 
 ## 文件导航
 
-- `novel/series-bible.md`：小说母本设定总纲
-- `novel/family-dossier.md`：家庭背景硬设定
-- `novel/chapter-template.md`：每章开写前必须填写的写作卡
-- `novel/chapter-cards/01-glass-crack.md`：第一章写作卡
-- `novel/chapter-cards/02-first-lie.md` 到 `09-ninth-road.md`：后续章节最小写作卡
-- `novel/character-continuity.md`：人物连续性账本
-- `novel/chapter-ledger.md`：章节账本，标记正典版本和下一章债务
-- `novel/foreshadowing-ledger.md`：伏笔账本
-- `novel/story-control-checklist.md`：写作自动推荐和故事控制清单
-- `novel/chapter-navigators/`：每章开写前的章节导航图
-- `workflow/todo.md`：项目待办
-- `workflow/production-pipeline.md`：从小说到短剧/视频的流程
-- `research/market-and-title-notes.md`：赛道和片名研究记录
-- `docs/superpowers/specs/2026-06-09-ninth-road-novel-design.md`：正式设计文档
+- `projects/README.md`：项目隔离规则和项目列表
+- `projects/frozen-rebirth-revenge/PROJECT.md`：当前正式项目入口
+- `projects/frozen-rebirth-revenge/bible.md`：项目设定总纲
+- `projects/frozen-rebirth-revenge/episodes/episode-01-script.md`：第一集正典剧本
+- `projects/frozen-rebirth-revenge/assets/`：第一集素材 brief、索引、生图提示词和最终图片素材
+- `projects/frozen-rebirth-revenge/storyboards/episode-01-shot-beats.md`：服务 Seedance 2.0 的镜头节拍
+- `projects/frozen-rebirth-revenge/video-generation/episode-01-handoff.md`：可直接用于视频生成的交付提示词
+- `projects/frozen-rebirth-revenge/reviews/`：质量检查和素材总览
 
-## 写作规则
+## 工作原则
 
-每章先填写写作卡，再写正文。写完正文后回到写作卡自检：
-
-- 家庭背景有没有进入事件
-- 父亲和母亲有没有真实压力
-- 主角有没有明确选择
-- 未来分支有没有代价
-- 父母是否通过行动影响孩子
-- 选择之后是否有真实成本
-- 章尾是否给下一阶段留下种子
+- 新剧本必须创建独立 `projects/<project-slug>/`，不在仓库根目录堆放项目事实。
+- 通用方法写入 skill；项目事实只写入项目目录。
+- 素材引用使用中文可读 `@素材名`，并与 `assets/素材名.png` 文件名一致。
+- 视频交付以 Seedance 2.0 可执行字段为准，不维护与生成无关的人读分镜副本。
