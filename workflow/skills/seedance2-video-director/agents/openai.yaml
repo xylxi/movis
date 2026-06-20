@@ -1,6 +1,0 @@
-interface:
-  display_name: "Seedance 2.0 视频导演"
-  short_description: "创建、审查和排查 Seedance 视频提示词"
-  default_prompt: "使用 $seedance2-video-director，把我的视频想法整理成经过平台检查的 Seedance 2.0 提示词。"
-policy:
-  allow_implicit_invocation: true
