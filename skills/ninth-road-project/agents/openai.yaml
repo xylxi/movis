@@ -1,0 +1,4 @@
+interface:
+  display_name: "第九条路项目"
+  short_description: "第九条路小说母本、短剧改编、视觉资产与视频提示词工作流"
+  default_prompt: "Use $ninth-road-project to work inside the 第九条路 project with the correct canon, adaptation, asset, storyboard, and video prompt gates."
