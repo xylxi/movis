@@ -1,7 +1,7 @@
 # 剧本创作图片素材提示词系统设计
 
-状态：draft for user review  
-日期：2026-06-20  
+状态：draft for user review
+日期：2026-06-20
 适用工作区：`/Users/ruir/Documents/movies`
 
 ## 目标
