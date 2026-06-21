@@ -16,9 +16,11 @@ slug：frozen-rebirth-revenge
 ## 文件导航
 
 - `bible.md`：项目 bible 和人物关系。
+- `AGENTS.md`：当前项目专属生产规则，包含女性角色设定图稳定生图经验。
 - `episodes/episode-01-script.md`：第一集 10 分钟场次剧本。
 - `assets/asset-briefs.md`：人物、场景、道具素材 brief。
 - `assets/image-generation-prompts.md`：18 个 planned 素材的逐张生图提示词。
+- `assets/asset-prompt-guidelines.md`：素材提示词写作规范。
 - `assets/_asset-index.md`：素材状态索引。
 - `storyboards/episode-01-shot-beats.md`：第一集镜头节拍。
 - `video-generation/episode-01-handoff.md`：第一集视频生成 handoff。
